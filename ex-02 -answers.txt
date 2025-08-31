@@ -1,0 +1,17 @@
+1. What happens when the number of hidden nodes increase?
+
+The capacity of the network increases.
+
+With few hidden nodes (e.g., 1–3), the network can only learn very simple decision boundaries (like straight lines or slightly curved). Accuracy stays low because it cannot capture the complexity of the spiral dataset.
+
+As you add more hidden nodes (e.g., 10–20), the network can learn more complex shapes, fitting the spiral/flower structure much better. Accuracy goes up.
+
+If you keep increasing too much (e.g., 50–100 hidden nodes), the network may start overfitting — it memorizes the training data, but may not generalize well.
+
+2. Pattern of accuracy when hidden nodes increase
+
+Low hidden nodes → underfitting → low accuracy.
+
+Moderate hidden nodes → best balance → higher accuracy (the decision boundary matches the true distribution).
+
+Too many hidden nodes → overfitting risk: accuracy on training set may be very high, but test/validation accuracy may stagnate or even drop.
